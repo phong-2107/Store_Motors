@@ -1,5 +1,6 @@
 ﻿using DAL.Entities;
 using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
 using System;
@@ -109,7 +110,17 @@ namespace GUI
         }
 
         #endregion
+        OverlayWindowOptions options = new OverlayWindowOptions(
+            backColor: Color.Black,
+            opacity: 0.5,
+            fadeIn: false,
+            fadeOut: false
+        );
 
+        IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
+        {
+            return SplashScreenManager.ShowOverlayForm(control, options);
+        }
 
         #region Animation Button Menutrip
         private void btnSanPhamItems_Click(object sender, EventArgs e)
@@ -169,6 +180,18 @@ namespace GUI
             }
         }
 
-
+        private void btnAccountItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Commons.handle = ShowProgressPanel(this, options);
+                FormAccount account = new FormAccount();
+                account.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -93,7 +93,7 @@
             this.bansi = new System.Windows.Forms.ToolStripMenuItem();
             this.trahang = new System.Windows.Forms.ToolStripMenuItem();
             this.account = new Guna.UI.WinForms.GunaContextMenuStrip();
-            this.accountAcc = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAccountItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FormBanHang = new System.Windows.Forms.ToolStripMenuItem();
             this.btnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.addNew = new Guna.UI.WinForms.GunaContextMenuStrip();
@@ -888,7 +888,7 @@
             this.account.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.account.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.account.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.accountAcc,
+            this.btnAccountItem,
             this.FormBanHang,
             this.btnExit});
             this.account.MinimumSize = new System.Drawing.Size(200, 135);
@@ -902,17 +902,18 @@
             this.account.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.account.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.account.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.account.Size = new System.Drawing.Size(200, 136);
+            this.account.Size = new System.Drawing.Size(200, 158);
             // 
-            // accountAcc
+            // btnAccountItem
             // 
-            this.accountAcc.Image = ((System.Drawing.Image)(resources.GetObject("accountAcc.Image")));
-            this.accountAcc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.accountAcc.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.accountAcc.Name = "accountAcc";
-            this.accountAcc.Padding = new System.Windows.Forms.Padding(10);
-            this.accountAcc.Size = new System.Drawing.Size(194, 44);
-            this.accountAcc.Text = "     Tài khoản";
+            this.btnAccountItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountItem.Image")));
+            this.btnAccountItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccountItem.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnAccountItem.Name = "btnAccountItem";
+            this.btnAccountItem.Padding = new System.Windows.Forms.Padding(10);
+            this.btnAccountItem.Size = new System.Drawing.Size(204, 44);
+            this.btnAccountItem.Text = "     Tài khoản";
+            this.btnAccountItem.Click += new System.EventHandler(this.btnAccountItem_Click);
             // 
             // FormBanHang
             // 
@@ -920,7 +921,7 @@
             this.FormBanHang.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.FormBanHang.Name = "FormBanHang";
             this.FormBanHang.Padding = new System.Windows.Forms.Padding(10);
-            this.FormBanHang.Size = new System.Drawing.Size(194, 44);
+            this.FormBanHang.Size = new System.Drawing.Size(204, 44);
             this.FormBanHang.Text = "     Bán hàng";
             this.FormBanHang.Click += new System.EventHandler(this.FormBanHang_Click);
             // 
@@ -931,7 +932,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(10);
-            this.btnExit.Size = new System.Drawing.Size(194, 44);
+            this.btnExit.Size = new System.Drawing.Size(204, 44);
             this.btnExit.Text = "     Đăng xuất";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -1369,7 +1370,7 @@
         private System.Windows.Forms.ToolStripMenuItem bansi;
         private System.Windows.Forms.ToolStripMenuItem trahang;
         private Guna.UI.WinForms.GunaContextMenuStrip account;
-        private System.Windows.Forms.ToolStripMenuItem accountAcc;
+        private System.Windows.Forms.ToolStripMenuItem btnAccountItem;
         private System.Windows.Forms.ToolStripMenuItem btnExit;
         private Guna.UI.WinForms.GunaContextMenuStrip addNew;
         private System.Windows.Forms.ToolStripMenuItem btnSanPham;
