@@ -117,3 +117,5 @@ D:\Project_Store-Motor\GUI\bin\Debug\EntityFramework.SqlServer.dll
 D:\Project_Store-Motor\GUI\bin\Debug\BUS.dll.config
 D:\Project_Store-Motor\GUI\bin\Debug\EntityFramework.SqlServer.xml
 D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormThemNV.resources
+D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormThemHang.resources
+D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormAccount.resources

@@ -40,8 +40,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lbError = new System.Windows.Forms.Label();
             this.pnError = new Guna.UI.WinForms.GunaElipsePanel();
-            this.btnEye = new Guna.UI.WinForms.GunaCircleButton();
             this.txtError = new Guna.UI.WinForms.GunaLabel();
+            this.btnEye = new Guna.UI.WinForms.GunaCircleButton();
             this.pnError.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +59,7 @@
             this.btnQuanli.Image = ((System.Drawing.Image)(resources.GetObject("btnQuanli.Image")));
             this.btnQuanli.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnQuanli.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnQuanli.Location = new System.Drawing.Point(44, 288);
+            this.btnQuanli.Location = new System.Drawing.Point(44, 298);
             this.btnQuanli.Name = "btnQuanli";
             this.btnQuanli.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(195)))));
             this.btnQuanli.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -67,7 +67,7 @@
             this.btnQuanli.OnHoverImage = null;
             this.btnQuanli.OnPressedColor = System.Drawing.Color.Black;
             this.btnQuanli.Radius = 5;
-            this.btnQuanli.Size = new System.Drawing.Size(135, 45);
+            this.btnQuanli.Size = new System.Drawing.Size(135, 50);
             this.btnQuanli.TabIndex = 6;
             this.btnQuanli.Text = "Quản lí";
             this.btnQuanli.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -93,6 +93,7 @@
             this.txtID.Size = new System.Drawing.Size(296, 40);
             this.txtID.TabIndex = 9;
             this.txtID.Click += new System.EventHandler(this.txtID_Click);
+            this.txtID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtID_KeyDown);
             // 
             // btnBanhang
             // 
@@ -108,7 +109,7 @@
             this.btnBanhang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanhang.Image")));
             this.btnBanhang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnBanhang.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnBanhang.Location = new System.Drawing.Point(205, 288);
+            this.btnBanhang.Location = new System.Drawing.Point(205, 298);
             this.btnBanhang.Name = "btnBanhang";
             this.btnBanhang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
             this.btnBanhang.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -116,7 +117,7 @@
             this.btnBanhang.OnHoverImage = null;
             this.btnBanhang.OnPressedColor = System.Drawing.Color.Black;
             this.btnBanhang.Radius = 5;
-            this.btnBanhang.Size = new System.Drawing.Size(135, 45);
+            this.btnBanhang.Size = new System.Drawing.Size(135, 50);
             this.btnBanhang.TabIndex = 7;
             this.btnBanhang.Text = "Bán hàng";
             this.btnBanhang.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,13 +184,14 @@
             // 
             this.btnRecovery.AutoSize = true;
             this.btnRecovery.BackColor = System.Drawing.Color.Transparent;
+            this.btnRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecovery.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(61)))));
-            this.btnRecovery.Location = new System.Drawing.Point(235, 203);
+            this.btnRecovery.Location = new System.Drawing.Point(228, 268);
             this.btnRecovery.Name = "btnRecovery";
-            this.btnRecovery.Size = new System.Drawing.Size(105, 16);
+            this.btnRecovery.Size = new System.Drawing.Size(112, 16);
             this.btnRecovery.TabIndex = 18;
-            this.btnRecovery.Text = "Forgot Password";
+            this.btnRecovery.Text = "Forgot Password?";
             this.btnRecovery.Click += new System.EventHandler(this.btnRecovery_Click);
             // 
             // btnExit
@@ -231,6 +233,18 @@
             this.pnError.TabIndex = 21;
             this.pnError.Visible = false;
             // 
+            // txtError
+            // 
+            this.txtError.AutoSize = true;
+            this.txtError.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(66)))), ((int)(((byte)(64)))));
+            this.txtError.Location = new System.Drawing.Point(8, 10);
+            this.txtError.Name = "txtError";
+            this.txtError.Size = new System.Drawing.Size(38, 17);
+            this.txtError.TabIndex = 24;
+            this.txtError.Text = "error";
+            this.txtError.Click += new System.EventHandler(this.gunaLabel2_Click);
+            // 
             // btnEye
             // 
             this.btnEye.AnimationHoverSpeed = 0.07F;
@@ -238,6 +252,7 @@
             this.btnEye.BackColor = System.Drawing.Color.Transparent;
             this.btnEye.BaseColor = System.Drawing.Color.Transparent;
             this.btnEye.BorderColor = System.Drawing.Color.Transparent;
+            this.btnEye.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEye.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEye.FocusedColor = System.Drawing.Color.Empty;
             this.btnEye.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -254,18 +269,6 @@
             this.btnEye.Size = new System.Drawing.Size(20, 20);
             this.btnEye.TabIndex = 22;
             this.btnEye.Click += new System.EventHandler(this.picEyes_Click);
-            // 
-            // txtError
-            // 
-            this.txtError.AutoSize = true;
-            this.txtError.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(66)))), ((int)(((byte)(64)))));
-            this.txtError.Location = new System.Drawing.Point(8, 10);
-            this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(38, 17);
-            this.txtError.TabIndex = 24;
-            this.txtError.Text = "error";
-            this.txtError.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // FormDangNhap
             // 

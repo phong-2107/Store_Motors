@@ -931,7 +931,7 @@
   <data name="FormBanHang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAWRJREFUOE+11M0rRFEcxvFDrCix8BI7xc6CLJQiC8lbLFAkNiQWoiQksrKYSKKU
+        DwAACw8BkvkDpQAAAWRJREFUOE+11M0rRFEcxvFDrCix8BI7xc6CLJQiC8lbLFAkNiQWoiQksrKYSKKU
         ouR1oSxQ4i9gYeMf8Jf4Pj/X7RhTc2Y0T32aOTP3Pt0593fH5TL5mMJylvoRR2WHGEVTkjE8YwHX0We+
         ZrzgHpY87KHXVr9Tjxt04QSF8OOfq+8tw3jCUQpvKMYrjqPPfLryCShx4STav9/+yc9B8cFJ8c8NKtS+
         aMMvbOVcKc4xZ6ssCmuhja9BGy4xgAQqkHGhohuxhXUUoARL2MADdqBjggs1SmfQaKVKK65QZiuSrlDR
@@ -1235,7 +1235,7 @@
   <data name="FormHome.IconOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAJTBJREFUeF7tnWmQFEeW5zW9vd1z2M72rNns9tB83P0w+2XNtq1tZ77MjI3Z2s6n
+        vQAADr0BR/uQrQAAJTBJREFUeF7tnWmQFEeW5zW9vd1z2M72rNns9tB83P0w+2XNtq1tZ77MjI3Z2s6n
         Pqa71ejgKkAS1F0FCKoKirMAIQkQAgkhIQESl24KSuigCgmEQFKDuikoDrUQJBRXQZ1ZF4i373lGEhmZ
         nmdEeF5/N/tBURnhz8P9/f/h4RGR3FcI5UYwOKY7GPzlrWBwxa3Bwff47zM3Bwdv3QwGR/nfBECmSA5J
         LnFOneZ/t6gcCwZ/0RUM/oSI/sxKQRTThTv/+90DA/+bB2gxD8znTA//fDc8cAD4gZVjPWwKX/LPTZKD

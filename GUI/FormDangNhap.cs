@@ -22,11 +22,12 @@ namespace GUI
         public FormDangNhap()
         {
             InitializeComponent();
+            
         }
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
-
+            txtID.Focus();
         }
         private void btnQuanli_Click(object sender, EventArgs e)
         {
@@ -102,7 +103,7 @@ namespace GUI
             {
                 foreach (var item in listNhanVien)
                 {
-                    if (txtID.Text == item.TaiKhoanLogin.TENTAIKHOAN && txtPass.Text == item.TaiKhoanLogin.MATKHAU)
+                    if (txtID.Text == item.TaiKhoanLogin.TENTAIKHOAN.Trim() && txtPass.Text == item.TaiKhoanLogin.MATKHAU.Trim())
                     {
                         nv = item;
                         check = true;
@@ -164,6 +165,15 @@ namespace GUI
         private void txtID_Click(object sender, EventArgs e)
         {
             txtID.BorderColor = Color.FromArgb(26, 120, 254);
+        }
+
+        private void txtID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtPass.Focus();
+                e.Handled = true;
+            }
         }
     }
 }

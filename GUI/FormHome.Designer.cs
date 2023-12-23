@@ -48,7 +48,7 @@
             this.btnCaiDat = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPanel9 = new Guna.UI.WinForms.GunaPanel();
+            this.pnaccount = new Guna.UI.WinForms.GunaPanel();
             this.btnAccount = new Guna.UI.WinForms.GunaButton();
             this.accordionControlElement24 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -135,7 +135,7 @@
             this.panel1.SuspendLayout();
             this.gunaPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
-            this.gunaPanel9.SuspendLayout();
+            this.pnaccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Taskbar)).BeginInit();
             this.SanPham.SuspendLayout();
             this.KhoHang.SuspendLayout();
@@ -218,7 +218,7 @@
             this.gunaPanel2.Controls.Add(this.gunaPanel14);
             this.gunaPanel2.Controls.Add(this.panel1);
             this.gunaPanel2.Controls.Add(this.gunaPanel4);
-            this.gunaPanel2.Controls.Add(this.gunaPanel9);
+            this.gunaPanel2.Controls.Add(this.pnaccount);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel2.Name = "gunaPanel2";
@@ -231,7 +231,7 @@
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
             this.gunaPanel1.Controls.Add(this.btnHoTro);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaPanel1.Location = new System.Drawing.Point(1317, 0);
+            this.gunaPanel1.Location = new System.Drawing.Point(1328, 0);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Padding = new System.Windows.Forms.Padding(7, 3, 7, 3);
             this.gunaPanel1.Size = new System.Drawing.Size(114, 44);
@@ -271,7 +271,7 @@
             this.gunaPanel14.Controls.Add(this.gunaElipsePanel1);
             this.gunaPanel14.Controls.Add(this.label1);
             this.gunaPanel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaPanel14.Location = new System.Drawing.Point(1431, 0);
+            this.gunaPanel14.Location = new System.Drawing.Point(1442, 0);
             this.gunaPanel14.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel14.Name = "gunaPanel14";
             this.gunaPanel14.Padding = new System.Windows.Forms.Padding(3);
@@ -331,7 +331,7 @@
             // 
             this.panel1.Controls.Add(this.btnCaiDat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1480, 0);
+            this.panel1.Location = new System.Drawing.Point(1491, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(4);
             this.panel1.Size = new System.Drawing.Size(44, 44);
@@ -388,15 +388,15 @@
             this.gunaPictureBox2.TabIndex = 1;
             this.gunaPictureBox2.TabStop = false;
             // 
-            // gunaPanel9
+            // pnaccount
             // 
-            this.gunaPanel9.Controls.Add(this.btnAccount);
-            this.gunaPanel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaPanel9.Location = new System.Drawing.Point(1524, 0);
-            this.gunaPanel9.Name = "gunaPanel9";
-            this.gunaPanel9.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.gunaPanel9.Size = new System.Drawing.Size(170, 44);
-            this.gunaPanel9.TabIndex = 9;
+            this.pnaccount.Controls.Add(this.btnAccount);
+            this.pnaccount.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnaccount.Location = new System.Drawing.Point(1535, 0);
+            this.pnaccount.Name = "pnaccount";
+            this.pnaccount.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.pnaccount.Size = new System.Drawing.Size(159, 44);
+            this.pnaccount.TabIndex = 9;
             // 
             // btnAccount
             // 
@@ -423,7 +423,7 @@
             this.btnAccount.OnHoverImage = null;
             this.btnAccount.OnPressedColor = System.Drawing.Color.Black;
             this.btnAccount.Radius = 5;
-            this.btnAccount.Size = new System.Drawing.Size(160, 40);
+            this.btnAccount.Size = new System.Drawing.Size(149, 40);
             this.btnAccount.TabIndex = 8;
             this.btnAccount.Text = "Anonymous";
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
@@ -509,6 +509,7 @@
             this.accordionControlElement14,
             this.accordionControlElement15,
             this.accordionControlElement16});
+            this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Sản phẩm";
@@ -890,6 +891,7 @@
             this.accountAcc,
             this.FormBanHang,
             this.btnExit});
+            this.account.MinimumSize = new System.Drawing.Size(200, 135);
             this.account.Name = "SanPham";
             this.account.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.account.RenderStyle.BorderColor = System.Drawing.Color.Transparent;
@@ -900,7 +902,7 @@
             this.account.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.account.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.account.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.account.Size = new System.Drawing.Size(185, 158);
+            this.account.Size = new System.Drawing.Size(200, 136);
             // 
             // accountAcc
             // 
@@ -909,7 +911,7 @@
             this.accountAcc.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.accountAcc.Name = "accountAcc";
             this.accountAcc.Padding = new System.Windows.Forms.Padding(10);
-            this.accountAcc.Size = new System.Drawing.Size(204, 44);
+            this.accountAcc.Size = new System.Drawing.Size(194, 44);
             this.accountAcc.Text = "     Tài khoản";
             // 
             // FormBanHang
@@ -918,7 +920,7 @@
             this.FormBanHang.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.FormBanHang.Name = "FormBanHang";
             this.FormBanHang.Padding = new System.Windows.Forms.Padding(10);
-            this.FormBanHang.Size = new System.Drawing.Size(204, 44);
+            this.FormBanHang.Size = new System.Drawing.Size(194, 44);
             this.FormBanHang.Text = "     Bán hàng";
             this.FormBanHang.Click += new System.EventHandler(this.FormBanHang_Click);
             // 
@@ -929,7 +931,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(10);
-            this.btnExit.Size = new System.Drawing.Size(204, 44);
+            this.btnExit.Size = new System.Drawing.Size(194, 44);
             this.btnExit.Text = "     Đăng xuất";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -1286,7 +1288,7 @@
             this.panel1.ResumeLayout(false);
             this.gunaPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
-            this.gunaPanel9.ResumeLayout(false);
+            this.pnaccount.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Taskbar)).EndInit();
             this.SanPham.ResumeLayout(false);
             this.KhoHang.ResumeLayout(false);
@@ -1322,7 +1324,7 @@
         private Guna.UI.WinForms.GunaButton btnCaiDat;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
-        private Guna.UI.WinForms.GunaPanel gunaPanel9;
+        private Guna.UI.WinForms.GunaPanel pnaccount;
         private Guna.UI.WinForms.GunaButton btnAccount;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement24;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;

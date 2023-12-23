@@ -7,7 +7,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,6 +40,12 @@ namespace GUI
         }
         private void FormHome_Load(object sender, EventArgs e)
         {
+            btnAccount.Text = Dn.TENNV.ToString();
+            pnaccount.Width = 230;
+            if (Dn.ANHNV.Length != 0)
+            {
+                ShowAvatar(Dn.ANHNV);
+            }
             FormTongQuan demo = new FormTongQuan();
             openChildForm(demo);
         }
@@ -57,6 +65,29 @@ namespace GUI
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private void ShowAvatar(string ImageName)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(ImageName))
+                {
+                    btnAccount.Image = null;
+                }
+                else
+                {
+                    string parentDirectory = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+                    string imagePath = Path.Combine(parentDirectory, "Images", ImageName);
+                    btnAccount.Image = Image.FromFile(imagePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+            }
+
+        }
+
         #endregion
 
         #region Animation Button Taskbar
@@ -67,7 +98,7 @@ namespace GUI
         // Button Tài khoản
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            account.Show(btnAccount, -18, btnAccount.Height + 3);
+            account.Show(btnAccount, 10, btnAccount.Height + 3);
         }
 
 
@@ -128,6 +159,7 @@ namespace GUI
             {
                 this.Hide();
                 FormBanHang home = new FormBanHang();
+                home.Dn = Dn;
                 home.Closed += (s, args) => this.Close();
                 home.Show();
             }
@@ -136,5 +168,7 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
+
+
     }
 }

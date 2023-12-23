@@ -1,5 +1,8 @@
-﻿using DevExpress.Charts.Sankey.Native;
+﻿using BUS;
+using DAL.Entities;
+using DevExpress.Charts.Sankey.Native;
 using Guna.UI.WinForms;
+using DevExpress.XtraSplashForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +15,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using DevExpress.XtraSplashScreen;
 
 namespace GUI
 {
     public partial class FormSanPham : Form
     {
+        #region KHAI BÁO GIÁ TRI
         private const bool V = true;
+        private readonly MauXeService mauXeService = new MauXeService();
+        #endregion
 
+
+        #region MAIN
         public FormSanPham()
         {
             InitializeComponent();
@@ -26,32 +35,77 @@ namespace GUI
 
         private void FormSanPham_Load(object sender, EventArgs e)
         {
-            
+
+            BindGrid(mauXeService.GetAll());
+        }
+        #endregion
+
+
+        #region XỬ LÝ LOGIC 
+
+        OverlayWindowOptions options = new OverlayWindowOptions(
+            backColor: Color.Black,
+            opacity: 0.5,
+            fadeIn: false,
+            fadeOut: false
+        );
+
+        IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
+        {
+            return SplashScreenManager.ShowOverlayForm(control, options);
         }
 
+        private void BindGrid(List<MauXe> list)
+        {
+            dgvMotorcycles.Rows.Clear();
+            foreach (var x in list)
+            {
+                if (x.ACTIVE == true)
+                {
+                    int index = dgvMotorcycles.Rows.Add();
+                    dgvMotorcycles.Rows[index].Cells[0].Value = x.IDMAUXE;
+                    dgvMotorcycles.Rows[index].Cells[1].Value = x.TENMAUXE;
+                    dgvMotorcycles.Rows[index].Cells[2].Value = x.PHANKHOI;
+                    dgvMotorcycles.Rows[index].Cells[3].Value = x.LOAICON;
+                    dgvMotorcycles.Rows[index].Cells[4].Value = x.SOLUONG;
+                    dgvMotorcycles.Rows[index].Cells[5].Value = x.GIANHAP.ToString() + " VND";
+                    dgvMotorcycles.Rows[index].Cells[6].Value = x.GIABAN.ToString() + " VND";
+
+                }
+
+            }
+        }
+
+        private void Search(string s)
+        {
+            try
+            {
+                var listanPham = mauXeService.GetAll();
+                var listKHHD = listanPham.Where(p => p.ACTIVE == true).ToList();
+                var listSeach = listKHHD.Where(x =>
+                                        (x.IDMAUXE.Trim().ToLower().Contains(s))
+                                        || (x.TENMAUXE.Trim().ToLower().Contains(s))
+                                        ).ToList();
+                BindGrid(listSeach);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        #endregion
+
+
+        #region GIAO DIEN
         private void btnAddnew_Click(object sender, EventArgs e)
         {
             ThemMoi.Show(btnAddnew, 0, btnAddnew.Height);
         }
 
-
-        //add a new row  
-        //dgv.AddNewRow();  
-        //set a new row cell value. The static GridControl.NewItemRowHandle field allows you to retrieve the added row  
-        //gridView1.SetRowCellValue(GridControl.NewItemRowHandle, gridView1.Columns["Name"], "Please enter new value");  
-private void dgvSanPham_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaElipsePanel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnDFTime_Click(object sender, EventArgs e)
         {
-            if(timePickerDf.Visible == true)
+            if (timePickerDf.Visible == true)
             {
                 timePickerDf.Visible = false;
             }
@@ -66,28 +120,50 @@ private void dgvSanPham_Click(object sender, EventArgs e)
             Import.Show(btImport, 0, btImport.Height);
         }
 
-        private void Search(string s)
-        {
-            /*
-            Model1 context = new Model1();
-            var listKHHD = context.KhachHangs.Where(p => p.HoatDong == 1).ToList();
-            var listSeach = listKHHD.Where(x =>
-                                    (x.MaKH.Trim().ToLower().Contains(textBox1.Text.Trim().ToLower()))
-                                    || (x.TenKH.Trim().ToLower().Contains(textBox1.Text.Trim().ToLower()))
-                                    || (x.DienThoai.Contains(textBox1.Text.Trim()))
-                                    || (x.Email.Contains(textBox1.Text.Trim()))).ToList();
-            */
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             Find.Show(pnSearch, 0, pnSearch.Height);
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
 
+            var list = txtSearch.Text.Trim().Split('\0').ToList();
+            foreach (var x in list)
+            {
+                if (x != " ")
+                    Search(x);
+            }
+            //Search(txtSearch.Text.Trim());
         }
+
+        private void btnThemSanPham_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Commons.handle = ShowProgressPanel(this, options);
+                FormThemHang ThemHang = new FormThemHang();
+                ThemHang.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        #endregion
+
+
+
+        
+        
+
+
+
+        
+
+        
     }
 }
  

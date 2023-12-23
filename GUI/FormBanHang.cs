@@ -1,6 +1,7 @@
 ﻿using DAL.Entities;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,21 @@ namespace GUI
 
         private NhanVien dn = new NhanVien();
         public NhanVien Dn { get => dn; set => dn = value; }
+
+
+        OverlayWindowOptions options = new OverlayWindowOptions(
+            backColor: Color.Black,
+            opacity: 0.5,
+            fadeIn: false,
+            fadeOut: false
+        );
+
+        IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
+        {
+            return SplashScreenManager.ShowOverlayForm(control, options);
+        }
+
+
         private void btnMenu_Click(object sender, EventArgs e)
         {
             Menu.Show(btnMenu, btnMenu.Location.X - 210, btnMenu.Height);
@@ -31,14 +47,16 @@ namespace GUI
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            FormThemKhachHang ThemKH;
-
-
-                ThemKH = new FormThemKhachHang();
-                ThemKH.FormClosed += (s, args) => ThemKH = null; 
-                ThemKH.Dock = DockStyle.Fill;
-                ThemKH.Refresh();
-                ThemKH.Show();
+            try
+            {
+                Commons.handle = ShowProgressPanel(this, options);
+                FormThemKhachHang ThemHang = new FormThemKhachHang();
+                ThemHang.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            };
 
         }/*
         private void Create_FormClosed(object sender, FormClosedEventArgs e)
@@ -78,6 +96,7 @@ namespace GUI
             {
                 this.Hide();
                 FormHome home = new FormHome();
+                home.Dn = Dn;
                 home.Closed += (s, args) => this.Close();
                 home.Show();
             }

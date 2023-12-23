@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraSplashScreen;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,10 @@ namespace GUI
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            if (Commons.handle != null)
+            {
+                SplashScreenManager.CloseOverlayForm(Commons.handle);
+            }
             this.Close();
         }
 
