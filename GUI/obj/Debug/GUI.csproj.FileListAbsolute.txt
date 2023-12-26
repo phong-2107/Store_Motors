@@ -119,3 +119,5 @@ D:\Project_Store-Motor\GUI\bin\Debug\EntityFramework.SqlServer.xml
 D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormThemNV.resources
 D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormThemHang.resources
 D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormAccount.resources
+D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormThemChiTietXe.resources
+D:\Project_Store-Motor\GUI\obj\Debug\GUI.FormColors.resources

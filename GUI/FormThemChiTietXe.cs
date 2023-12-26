@@ -11,30 +11,24 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FormThemKhachHang : Form
+    public partial class FormThemChiTietXe : Form
     {
-        #region #KHAI BAO GIA TRI
-        #endregion
-
-        #region #MAIN
-        public FormThemKhachHang()
+        public FormThemChiTietXe()
         {
             InitializeComponent();
         }
-        #endregion
 
-        #region #SU LY LOGIC
-        #endregion
-
-        #region #GIAO DIEN
         private void btnExit_Click(object sender, EventArgs e)
         {
-            if (Commons.handle != null)
+            if (common2.handle != null)
             {
-                SplashScreenManager.CloseOverlayForm(Commons.handle);
+                SplashScreenManager.CloseOverlayForm(common2.handle);
             }
             this.Close();
         }
-        #endregion
+        private void FormThemChiTietXe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

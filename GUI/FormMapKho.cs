@@ -10,23 +10,12 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FormThemNV : Form
+    public partial class FormMapKho : Form
     {
-
-        #region #KHAI BAO GIA TRI
-        #endregion
-
-        #region #MAIN
-        #endregion
-
-        #region #SU LY LOGIC
-        #endregion
-
-        #region #GIAO DIEN
-        #endregion
-        public FormThemNV()
+        public FormMapKho()
         {
             InitializeComponent();
         }
+        
     }
 }

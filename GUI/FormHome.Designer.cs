@@ -56,6 +56,8 @@
             this.btnTongQuan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnProduct = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnColors = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnPhuTung = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -518,10 +520,31 @@
             // 
             this.btnProduct.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.Appearance.Default.Options.UseFont = true;
+            this.btnProduct.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnColors,
+            this.btnPhuTung});
+            this.btnProduct.Expanded = true;
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnProduct.Text = "Sản phẩm";
             this.btnProduct.Click += new System.EventHandler(this.btnSanPhamItems_Click);
+            // 
+            // btnColors
+            // 
+            this.btnColors.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColors.Appearance.Default.Options.UseFont = true;
+            this.btnColors.Name = "btnColors";
+            this.btnColors.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnColors.Text = "Màu Sắc";
+            this.btnColors.Click += new System.EventHandler(this.btnColors_Click);
+            // 
+            // btnPhuTung
+            // 
+            this.btnPhuTung.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhuTung.Appearance.Default.Options.UseFont = true;
+            this.btnPhuTung.Name = "btnPhuTung";
+            this.btnPhuTung.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnPhuTung.Text = "Phụ tùng";
+            this.btnPhuTung.Click += new System.EventHandler(this.btnPhuTung_Click);
             // 
             // accordionControlElement14
             // 
@@ -902,7 +925,7 @@
             this.account.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.account.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.account.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.account.Size = new System.Drawing.Size(200, 158);
+            this.account.Size = new System.Drawing.Size(200, 136);
             // 
             // btnAccountItem
             // 
@@ -911,7 +934,7 @@
             this.btnAccountItem.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnAccountItem.Name = "btnAccountItem";
             this.btnAccountItem.Padding = new System.Windows.Forms.Padding(10);
-            this.btnAccountItem.Size = new System.Drawing.Size(204, 44);
+            this.btnAccountItem.Size = new System.Drawing.Size(194, 44);
             this.btnAccountItem.Text = "     Tài khoản";
             this.btnAccountItem.Click += new System.EventHandler(this.btnAccountItem_Click);
             // 
@@ -921,7 +944,7 @@
             this.FormBanHang.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.FormBanHang.Name = "FormBanHang";
             this.FormBanHang.Padding = new System.Windows.Forms.Padding(10);
-            this.FormBanHang.Size = new System.Drawing.Size(204, 44);
+            this.FormBanHang.Size = new System.Drawing.Size(194, 44);
             this.FormBanHang.Text = "     Bán hàng";
             this.FormBanHang.Click += new System.EventHandler(this.FormBanHang_Click);
             // 
@@ -932,7 +955,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(10);
-            this.btnExit.Size = new System.Drawing.Size(204, 44);
+            this.btnExit.Size = new System.Drawing.Size(194, 44);
             this.btnExit.Text = "     Đăng xuất";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -1404,5 +1427,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private System.Windows.Forms.ToolStripMenuItem FormBanHang;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnColors;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnPhuTung;
     }
 }

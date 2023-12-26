@@ -142,7 +142,6 @@
             this.gunaLabel4.Size = new System.Drawing.Size(72, 16);
             this.gunaLabel4.TabIndex = 6;
             this.gunaLabel4.Text = "Điện thoại";
-            this.gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
             // 
             // gunaLabel5
             // 

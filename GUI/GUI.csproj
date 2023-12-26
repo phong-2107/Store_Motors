@@ -94,6 +94,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
@@ -124,6 +125,7 @@
     <Compile Include="borderRadius\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Commons2.cs" />
     <Compile Include="Commons.cs" />
     <Compile Include="FormAccount.cs">
       <SubType>Form</SubType>
@@ -137,6 +139,12 @@
     <Compile Include="FormBanHang.Designer.cs">
       <DependentUpon>FormBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormColors.Designer.cs">
+      <DependentUpon>FormColors.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +156,18 @@
     </Compile>
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMapKho.Designer.cs">
+      <DependentUpon>FormMapKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThemChiTietXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemChiTietXe.Designer.cs">
+      <DependentUpon>FormThemChiTietXe.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThemHang.cs">
       <SubType>Form</SubType>
@@ -193,11 +213,17 @@
     <EmbeddedResource Include="FormBanHang.resx">
       <DependentUpon>FormBanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormColors.resx">
+      <DependentUpon>FormColors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThemChiTietXe.resx">
+      <DependentUpon>FormThemChiTietXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemHang.resx">
       <DependentUpon>FormThemHang.cs</DependentUpon>

@@ -149,7 +149,7 @@
   <data name="gunaPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAiYAAAGQCAYAAACatauzAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAA/7JJREFUeF7svQecVtW1/q+IiEiT3nvvvffeex360NvQexvqAAMMbei9FwEREAEV
+        vAAADrwBlbxySQAA/7JJREFUeF7svQecVtW1/q+IiEiT3nvvvffeex360NvQexvqAAMMbei9FwEREAEV
         FbHErjHG2KLGGJN4TeL1ev15veu/vmu/exjNe/83uVEZZc/n83zOmfOe97z7tL2e/ayybxORgICAgICA
         gIA0gagbAwICAgICAgJuBqJuDAgICAgICAi4GYi6MSAgICAgICDgZiDqxoCAgICAgICAm4GoGwMCAgIC
         AgICbgaibgwICAgICAgIuBmIujEgICAgICAg4GYg6saAgLSEQ4eOpb/vvjO5jh+/r8DxE6dArqPHTmSM
@@ -3069,7 +3069,7 @@
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAARpJREFUOE/V071KA0EUhuENSrSzsdA2lZU29uYKtFNQWysttDUIXoi2QgRrOy/A
+        DAAACwwBP0AiyAAAARpJREFUOE/V071KA0EUhuENSrSzsdA2lZU29uYKtFNQWysttDUIXoi2QgRrOy/A
         wsY6kDbEwir4r+87yxZKZnYUm3zwwJ5lOczsnCkmNss4Qx8vGOAam2ggO358infc4RjbOMAV3nCDeWTF
         Zs/Yw7iVrKCHW8z6IhW36cpslkoLjzgJVSLncJs5/8hmD5gOVSQeQKd8rM0SPrEaqkiesFs+1mYGNlwP
         VSRD7JePtVmADduhisQ5czRysoNXzIUqki04Z45GKm73HpehSsTTdWidM0djXGx2gRFi33yLN8ChrebM
@@ -3145,22 +3145,22 @@
         RU5ErkJggg==
 </value>
   </data>
-  <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="MaSP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="idSP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="TenSP.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="GiaBan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="dataGridViewTextBoxColumn6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Anh.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAhhJREFUSEvt1s1LVFEch/Gp6E1CDMEIdRMtMjdBUQuplUvD/oBIiKhEqVW46QUK
+        DAAACwwBP0AiyAAAAhhJREFUSEvt1s1LVFEch/Gp6E1CDMEIdRMtMjdBUQuplUvD/oBIiKhEqVW46QUK
         WrRwVVSLoAI30iaIFhG0zCI3UQpFhQkFVkpG9J49z+1emxnPOMrcGy78wofhXGbOb87LPffmUsrm+DPz
         rIg/l+MKpnDUC1llCc7jDbbhLl7iML5gP1JLLQ7gIK7iHW7jNwZQB7MHX3ECfrfYOsw52zGCF/iJD9iC
         lbiH+6hCkr34hfd4FPsEl6Ifc0oXHMG52ASc3iQ1eIybWOaFOJ34jJ3owHechH21omTWoA8WasdpfMQO
@@ -3172,27 +3172,26 @@
         aXB9F7MQksv9AWB/vK1okWW/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="IDHoaDon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="MaHoaDon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="PriceHD.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Soluongban.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="SL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Dateban.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAASlJREFUOE/V1D9Lw0AAhvGAgg4uDhXBP4t+g25CNxcFdRLcFWfXruqsk0vxE/gZ
-        HB2d1dVNEBRcO9Tnib1wuaS2tTr4wg+SI/eWXO6a/ZtMYxv7P7QFO4qcozehMxS5gYMP+d14eYRz7Sji
-        zR0a+V0567joW3MgyQKcWyksDfSzjHeE13rDEtJU5scDrufK12W+LqEsOIVZRVi3bwt9KBReIy10zPjM
-        SIVxjpAWHiJNbaEL6wLHmcIVwgSvHYsz8KP4626BcfME55YKf2Njh4+Vx2Pj8ak7VqNwbroUWQs72MQG
-        3NCzGBb3qqWVPKPuVV5wi0scYBFxLPO52sxgHp6GJnZxAvfePbpwstdtHMPTM7BwWObg31wHrwhv8YGJ
-        Ez6k5XsO/EGy7BN8cXon2awq8wAAAABJRU5ErkJggg==
+        DAAACwwBP0AiyAAAAQhJREFUOE/t1LFOAkEURuFNsDMUdvoGamUirfocJpQ2RnsLE0vfwAI7KzoTSrST
+        0FEaC1/BXgsazmH3ohlwmbX2T74w3LlzGTaBoiYbuEUvYc29telghEnlFY84TFhzL/peYH0pdzhGHOzC
+        G6Wx5l70ncCzS7HRho9qfY93xE2CNffssdczqz54MdBDubE3e+A14lYp94zr/xt+p+6GcaM0jQbm5E8D
+        j7BdLudpY4B9NB64hU88zN+VOcMbGg902Bj+zPq4gre1tgmTPdCDXziFaeEZU+xYqJI90Gd2g59/Uwc4
+        L5eLZA30+fiaI3prB/raxK8DLzFEemCdJ1xgZfYQXyfXLqoUxQyH4HYtmqYzrAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

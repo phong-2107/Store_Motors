@@ -17,29 +17,33 @@ namespace GUI
 {
     public partial class FormBanHang : DevExpress.XtraEditors.XtraForm
     {
+
+        #region #KHAI BAO GIA TRI
+        private NhanVien dn = new NhanVien();
+        public NhanVien Dn { get => dn; set => dn = value; }
+        #endregion
+
+        #region #MAIN
         public FormBanHang()
         {
             InitializeComponent();
         }
+        #endregion
 
-
-        private NhanVien dn = new NhanVien();
-        public NhanVien Dn { get => dn; set => dn = value; }
-
-
+        #region #SU LY LOGIC
         OverlayWindowOptions options = new OverlayWindowOptions(
-            backColor: Color.Black,
-            opacity: 0.5,
-            fadeIn: false,
-            fadeOut: false
+        backColor: Color.Black,
+        opacity: 0.5,
+        fadeIn: false,
+        fadeOut: false
         );
-
         IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
         {
             return SplashScreenManager.ShowOverlayForm(control, options);
         }
+        #endregion
 
-
+        #region #GIAO DIEN
         private void btnMenu_Click(object sender, EventArgs e)
         {
             Menu.Show(btnMenu, btnMenu.Location.X - 210, btnMenu.Height);
@@ -58,18 +62,7 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             };
 
-        }/*
-        private void Create_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            create = null;
-            Xe = XuatIDXe();
-            showInforMotor(Xe);
-        }*/
-        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -89,7 +82,6 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnManage_Click(object sender, EventArgs e)
         {
             try
@@ -100,15 +92,12 @@ namespace GUI
                 home.Closed += (s, args) => this.Close();
                 home.Show();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        #endregion
     }
 }

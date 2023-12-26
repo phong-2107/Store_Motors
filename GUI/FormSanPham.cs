@@ -22,10 +22,11 @@ namespace GUI
     public partial class FormSanPham : Form
     {
         #region KHAI BÁO GIÁ TRI
+
+        private Form activeForm = null;
         private const bool V = true;
         private readonly MauXeService mauXeService = new MauXeService();
         #endregion
-
 
         #region MAIN
         public FormSanPham()
@@ -40,7 +41,6 @@ namespace GUI
         }
         #endregion
 
-
         #region XỬ LÝ LOGIC 
 
         OverlayWindowOptions options = new OverlayWindowOptions(
@@ -54,7 +54,6 @@ namespace GUI
         {
             return SplashScreenManager.ShowOverlayForm(control, options);
         }
-
         private void BindGrid(List<MauXe> list)
         {
             dgvMotorcycles.Rows.Clear();
@@ -75,7 +74,6 @@ namespace GUI
 
             }
         }
-
         private void Search(string s)
         {
             try
@@ -93,9 +91,29 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
+        private void ShowPanel(Panel pn)
+        {
+            if (pn.Height >= 220)
+            {
+                pn.Height = 82;
+            }
+            else if (pn.Height >= 82)
+            {
+                pn.Height = 220;
+            }
+        }
 
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            childForm.BringToFront();
+            childForm.Show();
+        }
         #endregion
-
 
         #region GIAO DIEN
         private void btnAddnew_Click(object sender, EventArgs e)
@@ -154,16 +172,26 @@ namespace GUI
 
         #endregion
 
+        private void btnShowHang_Click(object sender, EventArgs e)
+        {
+            ShowPanel(pnHangXe);
+        }
 
+        private void btnShowTonKho_Click(object sender, EventArgs e)
+        {
+            ShowPanel(pnTonKho);
+        }
 
-        
-        
+        private void btnShowTime_Click(object sender, EventArgs e)
+        {
+            ShowPanel(pnTime);
+        }
 
-
-
-        
-
-        
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FormTongQuan demo = new FormTongQuan();
+            openChildForm(demo);
+        }
     }
 }
  

@@ -155,6 +155,13 @@
             this.btnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.DatHang = new GUI.borderRadius.borderMenutrip();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Search = new GUI.borderRadius.borderMenutrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.plSiderbar.SuspendLayout();
             this.gunaPanel7.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
@@ -219,6 +226,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.Menu.SuspendLayout();
             this.DatHang.SuspendLayout();
+            this.Search.SuspendLayout();
             this.SuspendLayout();
             // 
             // plSiderbar
@@ -490,7 +498,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(737, 842);
             this.tableLayoutPanel2.TabIndex = 13;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // gunaPanel14
             // 
@@ -1687,7 +1694,6 @@
             this.gunaElipsePanel1.Radius = 15;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(709, 948);
             this.gunaElipsePanel1.TabIndex = 0;
-            this.gunaElipsePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel1_Paint);
             // 
             // btnQuanli
             // 
@@ -1801,7 +1807,7 @@
             this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Menu.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(256, 290);
+            this.Menu.Size = new System.Drawing.Size(256, 268);
             // 
             // BtnBaoCao
             // 
@@ -1900,6 +1906,95 @@
             this.toolStripMenuItem7.Size = new System.Drawing.Size(165, 40);
             this.toolStripMenuItem7.Text = "BanHang";
             // 
+            // Search
+            // 
+            this.Search.BackColor = System.Drawing.Color.White;
+            this.Search.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.Search.Name = "borderMenutrip1";
+            this.Search.RenderStyle.ArrowColor = System.Drawing.Color.WhiteSmoke;
+            this.Search.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.Search.RenderStyle.ColorTable = null;
+            this.Search.RenderStyle.RoundedEdges = true;
+            this.Search.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.Search.RenderStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            this.Search.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.Search.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.Search.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
+            this.Search.Size = new System.Drawing.Size(256, 268);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem1.Text = "    Xem Báo Cáo Cuối ngày";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
+            this.toolStripMenuItem2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem2.Text = "    Xử lý đặt hàng";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
+            this.toolStripMenuItem3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem3.Text = "    Xử lí yêu cầu sửa chữa";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
+            this.toolStripMenuItem4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem4.Text = "    Lập phiếu thu";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
+            this.toolStripMenuItem5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem5.Text = "    Quản lý";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
+            this.toolStripMenuItem6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(285, 44);
+            this.toolStripMenuItem6.Text = "    Đăng xuất";
+            // 
             // FormBanHang
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
@@ -1984,6 +2079,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.Menu.ResumeLayout(false);
             this.DatHang.ResumeLayout(false);
+            this.Search.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2116,5 +2212,12 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel34;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox27;
         private Guna.UI.WinForms.GunaLabel gunaLabel35;
+        private borderRadius.borderMenutrip Search;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
     }
 }

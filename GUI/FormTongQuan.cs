@@ -12,22 +12,22 @@ namespace GUI
 {
     public partial class FormTongQuan : Form
     {
+
+        #region #KHAI BAO GIA TRI
+        #endregion
+
+        #region #MAIN
         public FormTongQuan()
         {
             InitializeComponent();
         }
-
         private void FormTongQuan_Load(object sender, EventArgs e)
         {
 
         }
-
-        
-
-       
         private void FormTongQuan_SizeChanged(object sender, EventArgs e)
         {
-            if(this.Size.Width <= 1345)
+            if (this.Size.Width <= 1345)
             {
                 lbBanLe.Visible = false;
                 lbDoanhthu.Visible = false;
@@ -44,20 +44,12 @@ namespace GUI
                 PriceDT.Location = new Point(40, 56);
             }
         }
+        #endregion
 
-        private void gunaVProgressBar3_Click(object sender, EventArgs e)
-        {
+        #region #SU LY LOGIC
+        #endregion
 
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gunaDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        #region #GIAO DIEN
+        #endregion
     }
 }

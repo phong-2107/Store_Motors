@@ -13,51 +13,47 @@ namespace GUI
 {
     public partial class FormAccount : Form
     {
+
+        #region KHAI BÁO GIÁ TRI
+
+        #endregion
+
+        #region MAIN
         public FormAccount()
         {
             InitializeComponent();
         }
+        #endregion
 
-        private void gunaLabel8_Click(object sender, EventArgs e)
-        {
+        #region XỬ LÝ LOGIC 
 
-        }
+        #endregion
 
-        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        #region GIAO DIEN
         private void btnChinhSua_Click(object sender, EventArgs e)
         {
-            if(pnBaomat.Height <= 80 && pnBaomatLon.Height <= 110)
+            if (pnBaomat.Height <= 80 && pnBaomatLon.Height <= 110)
             {
                 pnBaomat.Height = 210;
                 pnBaomatLon.Height = 240;
                 this.Height = 650;
                 btnChinhSua.Text = "Đóng";
                 btnChinhSua.Location = new Point(625, 21);
-                
+
                 btnLuu.Visible = true;
                 btnLuu.Location = new Point(710, 21);
             }
-            else if(pnBaomat.Height >= 210 && pnBaomatLon.Height >= 240)
+            else if (pnBaomat.Height >= 210 && pnBaomatLon.Height >= 240)
             {
                 pnBaomat.Height = 80;
                 pnBaomatLon.Height = 110;
-                this.Height = 580;
+                this.Height = 550;
                 btnChinhSua.Text = "Chỉnh sửa";
                 btnChinhSua.Location = new Point(710, 21);
                 btnLuu.Visible = false;
                 btnLuu.Location = new Point(625, 21);
             }
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (Commons.handle != null)
@@ -71,5 +67,7 @@ namespace GUI
         {
 
         }
+
+        #endregion
     }
 }

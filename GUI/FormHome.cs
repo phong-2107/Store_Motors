@@ -19,9 +19,7 @@ namespace GUI
 {
     public partial class FormHome : DevExpress.XtraEditors.XtraForm
     {
-        
-
-        #region Validation
+        #region KHAI BAO GIA TRI
 
         private Form activeForm = null;
         Button currentButton = new Button();
@@ -31,9 +29,15 @@ namespace GUI
         private NhanVien dn = new NhanVien();
         public NhanVien Dn { get => dn; set => dn = value; }
 
+        OverlayWindowOptions options = new OverlayWindowOptions(
+            backColor: Color.Black,
+            opacity: 0.5,
+            fadeIn: false,
+            fadeOut: false
+        );
         #endregion
 
-        #region Dữ liệu Home
+        #region MAIN
 
         public FormHome()
         {
@@ -53,7 +57,8 @@ namespace GUI
 
         #endregion
 
-        #region Fuction xử lý hiệu ứng
+        #region SU LY LOGIC
+
         private void openChildForm(Form childForm)
         {
             if (activeForm != null) activeForm.Close();
@@ -89,46 +94,29 @@ namespace GUI
 
         }
 
+        IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
+        {
+            return SplashScreenManager.ShowOverlayForm(control, options);
+        }
+
         #endregion
 
-        #region Animation Button Taskbar
-
-
-        // Button sản phẩm
-
+        #region GIAO DIEN
         // Button Tài khoản
         private void btnAccount_Click(object sender, EventArgs e)
         {
             account.Show(btnAccount, 10, btnAccount.Height + 3);
         }
 
-
         // Button Cài đặt
         private void btnCaiDat_Click(object sender, EventArgs e)
         {
             Settings.Show(btnCaiDat, btnCaiDat.Location.X - 200, btnCaiDat.Height + 3);
         }
-
-        #endregion
-        OverlayWindowOptions options = new OverlayWindowOptions(
-            backColor: Color.Black,
-            opacity: 0.5,
-            fadeIn: false,
-            fadeOut: false
-        );
-
-        IOverlaySplashScreenHandle ShowProgressPanel(Control control, OverlayWindowOptions options)
-        {
-            return SplashScreenManager.ShowOverlayForm(control, options);
-        }
-
-        #region Animation Button Menutrip
         private void btnSanPhamItems_Click(object sender, EventArgs e)
         {
             openChildForm(new FormSanPham());
         }
-
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             try
@@ -148,22 +136,16 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
             FormTongQuan demo = new FormTongQuan();
             openChildForm(demo);
         }
-
         private void btnProduct_Click(object sender, EventArgs e)
         {
             FormSanPham demo = new FormSanPham();
             openChildForm(demo);
         }
-
-
-        #endregion
-
         private void FormBanHang_Click(object sender, EventArgs e)
         {
             try
@@ -179,7 +161,6 @@ namespace GUI
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnAccountItem_Click(object sender, EventArgs e)
         {
             try
@@ -192,6 +173,27 @@ namespace GUI
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        #endregion
+
+        private void btnColors_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Commons.handle = ShowProgressPanel(this, options);
+                FormColors color = new FormColors();
+                color.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnPhuTung_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -52,6 +52,7 @@
             this.btnQuanli.BackColor = System.Drawing.Color.Transparent;
             this.btnQuanli.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnQuanli.BorderColor = System.Drawing.Color.Black;
+            this.btnQuanli.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanli.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQuanli.FocusedColor = System.Drawing.Color.Empty;
             this.btnQuanli.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,7 +86,7 @@
             this.txtID.FocusedForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtID.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txtID.Location = new System.Drawing.Point(44, 147);
+            this.txtID.Location = new System.Drawing.Point(44, 130);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.Radius = 3;
@@ -102,6 +103,7 @@
             this.btnBanhang.BackColor = System.Drawing.Color.Transparent;
             this.btnBanhang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
             this.btnBanhang.BorderColor = System.Drawing.Color.Black;
+            this.btnBanhang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBanhang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBanhang.FocusedColor = System.Drawing.Color.Empty;
             this.btnBanhang.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,9 +137,9 @@
             this.txtPass.FocusedForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txtPass.Location = new System.Drawing.Point(44, 225);
+            this.txtPass.Location = new System.Drawing.Point(44, 208);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '●';
             this.txtPass.Radius = 3;
             this.txtPass.SelectedText = "";
             this.txtPass.Size = new System.Drawing.Size(296, 40);
@@ -150,7 +152,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(61)))));
-            this.label6.Location = new System.Drawing.Point(39, 43);
+            this.label6.Location = new System.Drawing.Point(39, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 29);
             this.label6.TabIndex = 14;
@@ -162,7 +164,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(61)))));
-            this.label1.Location = new System.Drawing.Point(41, 125);
+            this.label1.Location = new System.Drawing.Point(41, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 16);
             this.label1.TabIndex = 15;
@@ -174,7 +176,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(61)))));
-            this.label2.Location = new System.Drawing.Point(41, 203);
+            this.label2.Location = new System.Drawing.Point(41, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 16;
@@ -187,7 +189,7 @@
             this.btnRecovery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecovery.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecovery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(36)))), ((int)(((byte)(61)))));
-            this.btnRecovery.Location = new System.Drawing.Point(228, 268);
+            this.btnRecovery.Location = new System.Drawing.Point(228, 251);
             this.btnRecovery.Name = "btnRecovery";
             this.btnRecovery.Size = new System.Drawing.Size(112, 16);
             this.btnRecovery.TabIndex = 18;
@@ -227,9 +229,9 @@
             this.pnError.Controls.Add(this.txtError);
             this.pnError.Controls.Add(this.lbError);
             this.pnError.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnError.Location = new System.Drawing.Point(44, 75);
+            this.pnError.Location = new System.Drawing.Point(44, 68);
             this.pnError.Name = "pnError";
-            this.pnError.Size = new System.Drawing.Size(296, 40);
+            this.pnError.Size = new System.Drawing.Size(296, 35);
             this.pnError.TabIndex = 21;
             this.pnError.Visible = false;
             // 
@@ -238,12 +240,11 @@
             this.txtError.AutoSize = true;
             this.txtError.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(66)))), ((int)(((byte)(64)))));
-            this.txtError.Location = new System.Drawing.Point(8, 10);
+            this.txtError.Location = new System.Drawing.Point(10, 9);
             this.txtError.Name = "txtError";
             this.txtError.Size = new System.Drawing.Size(38, 17);
             this.txtError.TabIndex = 24;
             this.txtError.Text = "error";
-            this.txtError.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // btnEye
             // 
@@ -259,7 +260,7 @@
             this.btnEye.ForeColor = System.Drawing.Color.White;
             this.btnEye.Image = ((System.Drawing.Image)(resources.GetObject("btnEye.Image")));
             this.btnEye.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEye.Location = new System.Drawing.Point(307, 235);
+            this.btnEye.Location = new System.Drawing.Point(307, 218);
             this.btnEye.Name = "btnEye";
             this.btnEye.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.btnEye.OnHoverBorderColor = System.Drawing.Color.Transparent;
